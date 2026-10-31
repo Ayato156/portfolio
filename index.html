@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayato's room</title>
+    <meta name="description" content="Ayatoのポートフォリオサイトです。" />
+
+    <!-- 外部CSSの読み込み -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--ローディング-->
+    <div id="loading" class="loading">
+      <video
+        class="loading-video"
+        src="images/coffe.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="loading-text">Welcome to Ayato's room</div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header-inner">
+        <!-- サイトロゴ/タイトル -->
+        <h2 class="logo"><a href="#home">🐣Ayato's room</a></h2>
+
+        <!-- スマホ用ハンバーガーボタン -->
+        <button
+          class="hamburger"
+          id="js-hamburger"
+          aria-label="メニューを開閉する"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- ナビゲーションメニュー -->
+        <nav class="global-nav" id="js-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact" class="contact-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ファーストビュー (Hero) -->
+      <section id="home" class="hero fade-in-up">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Welcome to Ayato's room</h1>
+            <p>
+              ふらっと立ち寄れる、未経験からエンジニアを目指す、Ayatoの個人スペース。
+            </p>
+            <p>
+              これまでの取り組みや、作ってみたWebサイトやアプリなどを置いていきます。
+              <br />是非ゆっくり見ていってください。<br />
+            </p>
+
+            <a href="#works" class="hero-btn">作品を見る</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 自己紹介 (About Me) -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-image fade-in-up">
+              <!-- 写真を配置する場合は <img> タグに差し替えてください -->
+              <img src="images/yosshi.jpg" class="image-placeholder" />
+            </div>
+            <div class="about-text fade-in-up">
+              <p>
+                こんにちは<span
+                  >（或いはおはようございます、若しくはこんばんは。）</span
+                ><br />下野 綾斗です。
+                現在、未経験からエンジニアを目指し、プログラミングを学んでいます。
+              </p>
+              <p>
+                【簡単な経歴】<br /><br />
+                名古屋大学経済学部を卒業後、新卒で、株式会社マルハンへ入社しました。その後、友人から起業した会社への誘いがあったことから、新たな環境での挑戦を求めて、会社立ち上げに参画するため、前職を退職しました。
+              </p>
+              <p>
+                【エンジニアを目指したきっかけ】<br /><br />
+                様々な挑戦を行い、模索を続ける中で、「自分が最もエネルギーを注げるものは何か」を振り返った際、思い浮かんだのが、大学時代のC++を用いたチームでのゲーム制作体験でした。
+                再び適性を確かめるため、Progateでプログラミングの学習を再開したところ、再び時間を忘れて没頭し、「やはりこの道に進みたい」と感じ、エンジニアへの道へ進むことを決心しました。
+              </p>
+              <p>
+                【制作・学習で大切にしていること】<br /><br />
+                大切にしていることは、コードの疑問点があれば、実際にコードを変えて挙動を確認しながら、仕組みを深堀していくことです。そして、何よりも大切にしているのが、プログラミングの勉強や制作が「楽しい」という感覚です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- スキル (Skills) -->
+      <section id="skills" class="skills bg-gray">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid fade-in-up">
+            <!-- スキルカード 1 -->
+            <div class="skill-card">
+              <h3>HTML5 / CSS3</h3>
+              <p>
+                HTMLの基礎的な記述を習得しており、SEOやアクセシビリティなど、検索エンジンを意識した適切なタグ選びを心がけています。<br />CSSは、FlexboxやGridを用いた柔軟なレイアウト作成や、アニメーション、レスポンシブなどに対応可能です。
+              </p>
+            </div>
+            <!-- スキルカード 2 -->
+            <div class="skill-card">
+              <h3>JavaScript</h3>
+              <p>
+                アロー関数、for文、if文、配列やオブジェクト、クラスなど、基礎的な構文の知識は習得しています。まだ自力で組み上げられる段階には至っていませんが、本サイトのスクロールアニメーションやハンバーガーメニュー、拡大縮小などのDOM操作のように、生成AIを活用して、ある程度実用的な機能としてWebサイトに落とし込む実装力を持っています。
+              </p>
+            </div>
+            <!-- スキルカード 3 -->
+            <div class="skill-card">
+              <h3>Tools/Others</h3>
+              <p>
+                Git/GitHubの基本的なコマンド<br />（add, commit, push,
+                pull等）を習得しています。<br />
+                また本サイトの制作環境であるVSCodeの基本的な使い方を習得しており、生成AIを活用した、制作・学習の効率化も取り入れています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 制作物 (Works) -->
+      <section id="works" class="works">
+        <div class="container">
+          <h2 class="section-title">Works</h2>
+          <div class="works-grid">
+            <!-- 制作物カード 1 -->
+            <div class="work-card fade-in-up">
+              <div class="work-thumb">
+                <!-- サムネイル画像がある場合は <img> タグを使用してください -->
+                <img src="images/portfolio.png" alt="" />
+              </div>
+              <div class="work-info">
+                <h3>ポートフォリオサイト (本サイト)</h3>
+                <p>
+                  自身の自己紹介とスキル、制作物をまとめたサイトです。<br />【コンセプト】<br />全体的に、緩く、リラックスできる雰囲気にまとめました。<br />【こだわったポイント】<br />余白のバランスを調整し、デザインが単調にならないようにしました。また、スクロール時のアニメーションや、ホバー・クリックでの動き、ローディング中のアニメーションなどを実装しました。ユーザーの閲覧や操作に対して、なにかしらフィードバックを返すよう、意識して作りました。
+                </p>
+                <div class="work-tech">
+                  使用技術: HTML, CSS, JavaScript,Gemini
+                </div>
+                <div class="work-links">
+                  <a
+                    href="https://github.com/ayato156"
+                    class="btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                  <!-- デモサイトがある場合は以下を追加 -->
+                  <!-- <a href="#" class="btn btn-outline">Demo</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- 制作物カード 2 (ダミー) -->
+            <div class="work-card fade-in-up">
+              <div class="work-thumb">
+                <img src="images/yosshi2.jpg" alt="" class="coming-img" />
+                <div class="coming">Coming Soon</div>
+              </div>
+
+              <div class="work-info">
+                <h3>？？？</h3>
+                <p>
+                  次に制作するものは決まっておりませんが、HTML,CSS,JavaScriptを利用した、簡単なゲームや、Webアプリなどを作ってみたいと思っています。
+                </p>
+                <div class="work-tech">使用技術: HTML, CSS ,JavaScript</div>
+                <div class="work-links">
+                  <a
+                    href="#"
+                    class="btn btn-outline"
+                    style="pointer-events: none"
+                    >Coming Soon</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 連絡先 (Contact) -->
+      <section id="contact" class="contact bg-gray">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-right fade-in-up">
+              <h2 class="section-title">Contact</h2>
+              <div class="contact-info">
+                <p>最後までご覧いただきありがとうございます！</p>
+                <p>
+                  まだまだ始めたばかりですが、制作物へのアドバイスや、「ちょっと話してみたい」など、どんなことでも<br />お気軽にお声がけいただけると嬉しいです。<br /><br />※フォームは現在、ダミーフォームとなっております。
+                </p>
+                <a
+                  href="https://github.com/ayato156"
+                  class="btn btn-outline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Profile を見る</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-left fade-in-up">
+              <form
+                action="#"
+                method="POST"
+                class="contact-form"
+                onsubmit="
+                  event.preventDefault();
+                  alert('※これはダミーフォームです。実際には送信されません。');
+                "
+              >
+                <div class="form-group">
+                  <label for="name">お名前</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="山田 太郎"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">メールアドレス</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="example@example.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">メッセージ</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="ご用件を入力してください"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn form-submit">送信する</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="container">
+        <p><small>&copy; 2026 Ayato's room. All Rights Reserved.</small></p>
+      </div>
+    </footer>
+  </body>
+  <!-- 外部JavaScriptの読み込み -->
+  <script src="main.js" defer></script>
+</html>
