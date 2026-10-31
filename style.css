@@ -523,6 +523,10 @@ img {
   gap: 10px;
 }
 
+.play {
+  display: flex;
+  gap: 10px;
+}
 .work-links .btn {
   display: inline-block;
   padding: 8px 22px;
@@ -542,6 +546,29 @@ img {
 }
 
 .work-links .btn:hover {
+  background-color: #a85f2a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(217, 138, 80, 0.6);
+}
+
+.play .btn {
+  display: inline-block;
+  padding: 8px 22px;
+  border-radius: 9999px;
+  font-family: Quicksand, "sans-selif";
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+  background-color: #c5763a;
+  flex: 1;
+  box-shadow: 0 6px 16px rgba(217, 138, 80, 0.45);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shdow 0.2s ease;
+}
+.play .btn:hover {
   background-color: #a85f2a;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(217, 138, 80, 0.6);
